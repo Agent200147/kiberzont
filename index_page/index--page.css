@@ -53,6 +53,15 @@ body a{
 
     width: 896px;
     justify-content: space-between;
+
+
+}
+
+.menu__link{
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
 }
 
 .search{
@@ -110,7 +119,7 @@ body a{
 
 
 /*Секция рекомендации*/
-.container .recommendations--wrapper{
+.container .recommendations__wrapper{
     padding: 0 0 0 0;
     width: 85%;
 }
@@ -135,6 +144,18 @@ body a{
     border-radius: 40px;
     border: 1px solid #C4C4C4;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+
+.recommendations__item:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .up{
@@ -201,7 +222,11 @@ body a{
 
 /*Секция галерея*/
 .gallery{
-    margin-top: 250px;
+    margin-top: 280px;
+}
+
+.gallery .container{
+    padding: 0 0 0 0;
 }
 
 .gallery__fotos{
@@ -210,19 +235,34 @@ body a{
     flex-wrap: wrap;
     align-content: space-between;
 
-    height: 610px;
+    height: 620px;
 }
 
 .gallery__fotos .gallery__item{
-    width: 520px;
+    width: 534px;
     border-radius: 40px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
 }
 
+.gallery__item:hover{
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
 
 /*Секция новости*/
 .news{
     margin-top: 250px;
+}
+
+.news .container{
+    padding: 0 0 0 0;
 }
 
 .news__content{
@@ -268,9 +308,13 @@ body a{
     margin-top: 250px;
 }
 
+.rec--for--you .container{
+    padding: 0 0 0 0;
+}
+
 .rec--for--you img{
     margin-left: -15px;
-    width: 1107px;
+    width: 1133px;
 }
 
 
@@ -316,4 +360,18 @@ body a{
 
     display: flex;
     justify-content: space-between;
+}
+
+.footer__social--link{
+    cursor: pointer;
+
+    -webkit-transition: all 0.2s ease;;
+    -moz-transition: all 0.2s ease;;
+    -o-transition: all 0.2s ease;;
+    transition: all 0.2s ease;
+}
+
+
+.footer__social--link:hover{
+    transform: translatey(-5px);
 }

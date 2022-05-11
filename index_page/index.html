@@ -1,21 +1,34 @@
 <!doctype html>
-<html lang="en">
+<html lang="eru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>kiberzont</title>
+    <!--Иконка сайта-->
+    <link rel="icon" href="img/umbrella.svg">
+
+    <!--Шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--Стили-->
     <link rel="stylesheet" href="index--page.css">
+
+    <!--Бутстрап-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--Анимации-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
 </head>
 <body>
 
-    <header class="header container-fluid">
+    <header class="header container-fluid animate__animated animate__fadeInDown">
         <div class="container-lg header--wrapper">
             <div class="header--wrapper__logo"><img src="img/umbrella.svg" alt=""><div class="header__text">Киберзонт</div></div>
             <div class="menu">
@@ -29,31 +42,31 @@
         </div>
     </header>
 
-    <section class="slider container-fluid">
-        <img src="img/Croods%20Sitting%20on%20Floor.png" alt="" class="left--man">
-        <div class="slider--wrapper">fbgbgergeherherhtrhgrthrthrthnethrthe3hehnentrrtnbtrnrtnrtnrtnt</div>
-        <img src="img/Croods%20Standing.png" alt="" class="right--man">
+    <section class="slider container-fluid animate__animated animate__fadeIn">
+        <img src="img/Croods%20Sitting%20on%20Floor.png" alt="" class="left--man animate__animated animate__fadeInLeft">
+        <div class="slider--wrapper animate__animated animate__fadeIn animate__delay-1s">Какие-то новости</div>
+        <img src="img/Croods%20Standing.png" alt="" class="right--man animate__animated animate__fadeInRight">
     </section>
 
-    <section class="recommendations container">
+    <section class="recommendations container animate__animated animate__fadeIn wow">
         <div class="recommendations__wrapper container col-md-10">
             <div class="title recommendations__title">Рекомендовано для вас</div>
             <div class="recommendations__cards">
-                <div class="recommendations__item recommendations__item__1">
+                <div class="recommendations__item recommendations__item__1 animate__animated animate__slideInLeft wow">
                     <div class="up"></div>
                     <div class="down">
                         <div class="down__title">Благородные стремления не спасут: героям были возданы соответствующие почести</div>
                         <div class="down__content">Ключевые особенности структуры проекта своевременно верифицированы!</div>
                     </div>
                 </div>
-                <div class="recommendations__item recommendations__item__2">
+                <div class="recommendations__item recommendations__item__2 animate__animated animate__slideInUp wow">
                     <div class="up"></div>
                     <div class="down">
                         <div class="down__title">Только обереги никого не защитили</div>
                         <div class="down__content">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира, инициированные исключительно синтетически, призваны к ответу.</div>
                     </div>
                 </div>
-                <div class="recommendations__item recommendations__item__3">
+                <div class="recommendations__item recommendations__item__3 animate__animated animate__slideInRight wow">
                     <div class="up"></div>
                     <div class="down">
                         <div class="down__title">Убеждённость некоторых оппонентов станет частью наших традиций</div>
@@ -64,19 +77,19 @@
         </div>
     </section>
 
-    <section class="gallery container">
+    <section class="gallery container animate__animated animate__fadeIn wow">
         <div class="container">
             <div class="title gallery__title">Галлерея</div>
             <div class="gallery__fotos">
-                <img src="img/g1.png" alt="" class="gallery__item">
-                <img src="img/g2.png" alt="" class="gallery__item">
-                <img src="img/g3.png" alt="" class="gallery__item">
-                <img src="img/g4.png" alt="" class="gallery__item">
+                <img src="img/g1.png" alt="" class="gallery__item animate__animated animate__slideInLeft wow">
+                <img src="img/g2.png" alt="" class="gallery__item animate__animated animate__slideInRight wow">
+                <img src="img/g3.png" alt="" class="gallery__item animate__animated animate__slideInLeft wow">
+                <img src="img/g4.png" alt="" class="gallery__item animate__animated animate__slideInRight wow">
             </div>
         </div>
     </section>
 
-    <section class="news container">
+    <section class="news container animate__animated animate__fadeInLeft wow">
         <div class="container">
             <div class="title">Новости</div>
             <div class="news__content">
@@ -95,14 +108,14 @@
         </div>
     </section>
 
-    <section class="rec--for--you container">
+    <section class="rec--for--you container animate__animated animate__fadeInLeft wow">
         <div class="container">
             <div class="title">Рекомендовано для вас</div>
             <div class="rec--for--you__content"><img src="img/rec--for--you.png" alt=""></div>
         </div>
     </section>
 
-    <footer class="footer container-fluid">
+    <footer class="footer container-fluid animate__animated animate__fadeIn  wow">
         <div class="footer__left">
             <div class="footer__location--info">
                 Россия, Липецк, Улица, Дом
@@ -117,11 +130,12 @@
             </div>
         </div>
         <div class="footer__right">
-            <img src="img/footer/youtube.svg" alt="">
-            <img src="img/footer/vk.svg" alt="">
-            <img src="img/footer/tg.svg" alt="">
-            <img src="img/footer/odn.svg" alt="">
+            <a href="#" class="footer__social--link"><img src="img/footer/youtube.svg" alt=""></a>
+            <a href="#" class="footer__social--link"><img src="img/footer/vk.svg" alt=""></a>
+            <a href="#" class="footer__social--link"><img src="img/footer/tg.svg" alt=""></a>
+            <a href="#" class="footer__social--link"><img src="img/footer/odn.svg" alt=""></a>
         </div>
     </footer>
+    <script>new WOW().init();</script>
 </body>
 </html>
