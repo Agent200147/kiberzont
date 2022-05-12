@@ -2,7 +2,6 @@ html { scroll-behavior: smooth; }
 
 html body{
     background-image: url(Фон.jpg);
-    background-size: 100%;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -10,9 +9,10 @@ html body{
     /*letter-spacing: 0.03em;*/
 }
 
-body .container{
+
+/*body .container{
     width: 85%;
-}
+}*/
 .header{
     border-bottom: 1px solid black;
     font-weight: 300;
@@ -22,6 +22,7 @@ body .container{
     height: 80px;
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .header--wrapper__logo{
@@ -120,9 +121,10 @@ body a{
 
 
 /*Секция рекомендации*/
-.container .recommendations__wrapper{
+.recommendations__wrapper{
     padding: 0 0 0 0;
-    width: 85%;
+    /*width: 85%;*/
+    margin: 0 auto;
 }
 
 .title{
@@ -155,7 +157,7 @@ body a{
 }
 
 .recommendations__item:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -207,17 +209,17 @@ body a{
 }
 
 .recommendations__item__1 .up::after{
-    content: url("img/rec--card1.png");
+    content: url("img/Index--page/rec--card1.png");
     padding-top: 10px;
 }
 
 .recommendations__item__2 .up::after{
-    content: url("img/rec--card2.png");
+    content: url("img/Index--page/rec--card2.png");
     padding-top: 7px;
 }
 
 .recommendations__item__3 .up::after{
-    content: url("img/rec--card3.png");
+    content: url("img/Index--page/rec--card3.png");
 }
 
 
@@ -226,8 +228,10 @@ body a{
     margin-top: 280px;
 }
 
-.gallery .container{
+.gallery__wrapper{
     padding: 0 0 0 0;
+    /*width: 85%;*/
+    margin: 0 auto;
 }
 
 .gallery__fotos{
@@ -253,7 +257,7 @@ body a{
 }
 
 .gallery__item:hover{
-    transform: scale(1.07);
+    /*    transform: scale(1.07);*/
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -267,7 +271,7 @@ body a{
 }
 
 .news__content{
-    height: 640px;
+    /*    height: 640px;*/
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #C4C4C4;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
@@ -287,7 +291,9 @@ body a{
 
 .news__text{
     margin-right: 20px;
-    width: 672px;
+    /*    width: 672px;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .text__title{
@@ -314,7 +320,7 @@ body a{
 }
 
 .rec--for--you img{
-    margin-left: -15px;
+    /*    margin-left: -15px;*/
     width: 1133px;
 }
 
@@ -375,4 +381,228 @@ body a{
 
 .footer__social--link:hover{
     transform: translatey(-5px);
+}
+
+
+
+
+@media (max-width: 1100px) {
+
+    .header{
+        font-size: 18px;
+    }
+
+    .menu{
+        margin-left: 30px;
+    }
+
+    .header input{
+        width: 130px;
+        height: 26px;
+        font-size: 16px;
+    }
+
+    .slider{
+        height: auto;
+        margin-top: 140px;
+    }
+
+    .left--man{
+        width: 280px;
+    }
+
+    .right--man{
+        width: 270px;
+        margin-right: -30px;
+    }
+
+    .title{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .recommendations{
+        margin-top: 140px;
+    }
+
+    .recommendations__cards{
+        flex-wrap: wrap;
+    }
+
+    .recommendations__item:hover{
+        transform: scale(1.0);
+    }
+
+
+    .recommendations__cards .up::after{
+        transform: scale(0.9);
+        padding: 0 0 0 0 ;
+    }
+    .recommendations__item{
+        width: 340px;
+        height: 422px;
+    }
+
+    .recommendations__item__3{
+        margin: 30px auto;
+    }
+
+    .down{
+        height: 50%;
+        border-radius: 0 0 40px 40px;
+        background: white;
+
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        font-style: normal;
+    }
+
+    .down__title{
+        font-size: 18px;
+        color: #212121;
+        line-height: 23px;
+    }
+
+    .down__content{
+        font-size: 15px;
+        margin-top: 12px;
+        color: #474747;
+        line-height: 20px;
+    }
+
+    .gallery{
+        margin-top: 140px;
+    }
+
+    .gallery__fotos{
+        /*        display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap:  nowrap;*/
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .gallery__fotos .gallery__item{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .news__man img{
+        width: 240px;
+    }
+
+    .news__text{
+        margin-right: 20px;
+        width: 70%;
+    }
+
+    .text__title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .text__content{
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .news{
+        margin-top: 140px;
+    }
+
+    .rec--for--you{
+        margin-top: 140px;
+    }
+
+    .rec--for--you__content img{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+
+    .gallery__fotos{
+        /*        display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap:  nowrap;
+                height: auto; */
+    }
+
+    .gallery__fotos .gallery__item{
+        /*        width: 70%;
+                margin-bottom: 30px;*/
+    }
+
+    .text__title{
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .text__content{
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .slider{
+        justify-content: center;
+    }
+
+    .recommendations__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommendations__item__3{
+        margin: 0px auto;
+    }
+
+    .recommendations__item{
+        margin-top: 20px
+    }
+
+    .left--man, .right--man{
+        display: none;
+    }
+
+
+    .gallery__fotos{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .gallery__fotos .gallery__item{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .news__man{
+        display: none;
+    }
+
+    .news__text{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    .text__content{
+        font-size: 16px;
+    }
+
+
 }
